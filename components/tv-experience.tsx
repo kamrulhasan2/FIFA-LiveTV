@@ -284,6 +284,9 @@ export function TvExperience({ channels }: TvExperienceProps) {
             </span>
             <span>LiveTV</span>
           </div>
+          <div className="disclaimer">
+            <small><i> Developed by kamrul hasan </i></small>
+          </div>
           <div className="topbar-meta">
             <Link href="/guide" className="nav-action">
               <CircleHelp size={16} aria-hidden="true" />
