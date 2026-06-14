@@ -1,6 +1,7 @@
 "use client";
 
 import Hls from "hls.js";
+import Link from "next/link";
 import {
   BadgeCheck,
   Clock3,
@@ -10,6 +11,7 @@ import {
   History,
   ListVideo,
   Play,
+  CircleHelp,
   Radio,
   Search,
   Signal,
@@ -283,6 +285,10 @@ export function TvExperience({ channels }: TvExperienceProps) {
             <span>LiveTV</span>
           </div>
           <div className="topbar-meta">
+            <Link href="/guide" className="nav-action">
+              <CircleHelp size={16} aria-hidden="true" />
+              Guide
+            </Link>
             <span>{clock}</span>
             <span>{channels.length} channels</span>
           </div>
